@@ -1,0 +1,294 @@
+body{
+    font-family: 'Poppins', sans-serif;
+    max-width: 1280px;
+    margin: 0 auto;
+    background-image: url(https://i.pinimg.com/originals/f6/42/47/f642475976f0e5ef05f07c45733c9129.png);
+    background-size: contain;
+    background-attachment: fixed;
+    color: #333333;
+    transition: 0.2s ease-in-out;
+    cursor: url(http://www.rw-designer.com/cursor-view/46325.png), auto;
+}
+
+body.modo-escuro{
+    background-image: url(https://rare-gallery.com/uploads/posts/550459-sunset-16-bit.jpg);
+    background-size: contain;
+    background-attachment: fixed;
+    transition: 0.2s ease-in-out;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 25px;
+}
+
+header .pokebola, 
+header .imagem-botao{
+    width: 50px;
+    transition: 0.2s ease-in-out;
+}
+
+header .logo{
+    width: 130px;
+    transition: 0.2s ease-in-out;
+}
+
+.modo-escuro .logo{
+    width: 160px;
+    transition: 0.2s ease-in-out;
+    margin-bottom: -50px;
+}
+
+header #botao-alterar-tema{
+    background: none;
+    border: none;
+}
+
+header .pokebola:hover,
+header .imagem-botao:hover,
+main .cartao-pokemon:hover{
+    transform: scale(1.10);
+    cursor: url(http://www.rw-designer.com/cursor-view/46326.png), auto;
+}
+
+main{
+    padding: 25px;
+}
+
+.lista-pokemon{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+.cartao-pokemon{
+    width: 200px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    border-radius: 15px;
+    transition: 0.2s ease-in-out;    
+}
+
+.cartao-pokemon .informacoes{
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+}
+
+.cartao-pokemon .informacoes span{
+    padding: 5px;
+    text-transform: uppercase;
+    font-size: 17px;
+}
+
+.cartao-pokemon .gif-bulbasaur, .gif-ivysaur, .gif-venusaur, .gif-charmander, .gif-charmeleon, .gif-charizard, .gif-squirtle, .gif-wartortle, .gif-blastoise, .gif-caterpie, .gif-metapod, .gif-butterfree, .gif-weedle, .gif-kakuna, .gif-beedrill, .gif-pidgey, .gif-pidgeotto, .gif-pidgeot, .gif-rattata, .gif-raticate, .gif-spearow, .gif-fearow, .gif-ekans, .gif-arbok, .gif-pikachu, .gif-raichu, .gif-sandshrew, .gif-sandslash, .gif-nidoran-femea, .gif-nidorina, .gif-nidoqueen, .gif-nidoran-macho, .gif-nidorino, .gif-nidoking, .gif-clefairy, .gif-clefable, .gif-vulpix, .gif-ninetales, .gif-jigglypuff, .gif-zubat, .gif-golbat, .gif-oddish, .gif-gloom, .gif-vileplume, .gif-paras, .gif-parasect, .gif-venonat, .gif-venomoth, .gif-diglett, .gif-dugtrio, .gif-meowth, .gif-persian, .gif-psyduck, .gif-golduck, .gif-mankey, .gif-primeape, .gif-growlithe, .gif-arcanine, .gif-poliwag, .gif-poliwhirl, .gif-poliwrath, .gif-abra, .gif-kadabra, .gif-alakazam, .gif-machop, .gif-machoke, .gif-machamp, .gif-bellsprout, .gif-weepinbell, .gif-victreebel, .gif-tentacool, .gif-tentacruel, .gif-geodude, .gif-graveler, .gif-golem, .gif-ponyta, .gif-rapidash, .gif-slowpoke, .gif-slowbro, .gif-magnemite, .gif-magneton, .gif-farfetchd, .gif-doduo, .gif-dodrio, .gif-seel, .gif-dewgong, .gif-grimer, .gif-muk, .gif-shellder, .gif-cloyster, .gif-gastly, .gif-haunter, .gif-gengar, .gif-onix, .gif-drowzee, .gif-hypno, .gif-krabby, .gif-kingler, .gif-voltorb, .gif-electrode, .gif-exeggcute, .gif-exeggutor, .gif-cubone, .gif-marowak, .gif-hitmonlee, .gif-lickitung, .gif-koffing, .gif-weezing, .gif-rhyhorn, .gif-rhydon, .gif-chansey, .gif-tangela, .gif-kangaskhan, .gif-horsea, .gif-seadra, .gif-goldeen, .gif-seaking, .gif-staryu, .gif-starmie, .gif-mr-mime, .gif-scyther, .gif-jynx, .gif-electabuzz, .gif-magmar, .gif-pinsir, .gif-tauros, .gif-magikarp, .gif-gyarados, .gif-lapras, .gif-ditto, .gif-eevee, .gif-vaporeon, .gif-jolteon, .gif-flareon, .gif-porygon, .gif-omanyte, .gif-omastar, .gif-kabuto, .gif-kabutops, .gif-aerodactyl, .gif-snorlax, .gif-articuno, .gif-zapdos, .gif-moltres, .gif-dratini, .gif-dragonair, .gif-dragonite, .gif-mewtwo, .gif-mew {
+    width: 90px;
+    height: 90px;
+}
+
+.gif-wigglytuff, .gif-hitmonchan{
+    width: 70px;
+    height: 90px;
+}
+
+.cartao-pokemon .tipos{
+    display: flex;
+    gap: 15px;
+}
+
+.cartao-pokemon .tipo{
+    padding: 8px;
+    border-radius: 10px;
+}
+
+.grama{
+    background-color: #7ac74c;
+}
+
+.cartao-grama{
+    background-image: url(https://i.pinimg.com/originals/a2/00/d2/a200d28aace7b76d7b7e6b9d2223e348.jpg);
+    background-size: 520px;
+    background-repeat: no-repeat;
+    background-position-x: right;
+}
+
+.veneno{
+    background-color: #df67ddfb;
+}
+
+.cartao-veneno{
+    background-image: url(https://art.pixilart.com/sr23bab0c510a9a.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: right;
+}
+
+.fogo{
+    background-color: #ee8130;
+}
+
+.cartao-fogo{
+    background-image: url(https://cdna.artstation.com/p/assets/images/images/031/187/908/large/jeff-nixon-volcano.jpg?1602855667);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: center;
+}
+
+.agua{
+    background-color: #6390f0;
+}
+
+.cartao-agua{
+    background-image: url(https://i.redd.it/dhszyu1owji11.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: -20px;
+}
+
+.inseto{
+    background-color: #a6b91a;
+}
+
+.cartao-inseto{
+    background-image: url(https://i.pinimg.com/originals/c1/ab/07/c1ab076d234047f036a7a5dd7a7267a8.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: -50px;
+}
+
+.voador{
+    background-color: #bad4e5;
+}
+
+.cartao-voador{
+    background-image: url(https://preview.redd.it/u8au4bubma161.png?auto=webp&s=c79d4ffffe59e2e943d4f85a12055885e2b36a1d);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: center;
+}
+
+.normal{
+    background-color: #a79e9e;
+}
+
+.cartao-normal{
+    background-image: url(https://c4.wallpaperflare.com/wallpaper/406/189/125/digital-art-pixel-art-pixelated-pixels-wallpaper-preview.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: center;
+}
+
+.eletrico{
+    background-color: #f2f52a;
+}
+
+.cartao-eletrico{
+    background-image: url(https://c.wallhere.com/photos/25/83/Pok_mon_video_games_pixel_art-2124031.jpg!d);
+    background-size: 700px;
+    background-repeat: no-repeat;
+    background-position-x: -200px;
+    background-position-y: center;
+}
+
+
+.terra{
+    background-color: #d6a13f;
+}
+
+.cartao-terra{
+    background-image: url(https://i.pinimg.com/originals/7b/46/7e/7b467e25205a16f2f94edf5340151a3e.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: left;
+}
+
+.fada{
+    background-color: #ff89d8;
+}
+
+.cartao-fada{
+    background-image: url(https://e0.pxfuel.com/wallpapers/439/665/desktop-wallpaper-pink-pixel-kawaii-pixel-art-thumbnail.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: left;
+}
+
+.lutador{
+    background-color: #f13c3c;
+}
+
+.cartao-lutador{
+    background-image: url(https://i.redd.it/xk9c50dhyf351.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: center;
+}
+
+.psiquico{
+    background-color: #f82c70;
+}
+
+.cartao-psiquico{
+    background-image: url(https://preview.redd.it/a3ftzqi7ide71.png?auto=webp&s=7cc4389f7b7d621216c70cc9f1d43e57f76e3d0d);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: center;
+}
+
+.pedra{
+    background-color: #9b7f33;
+}
+
+.cartao-pedra{
+    background-image: url(https://i.pinimg.com/originals/6d/13/11/6d13119ec35d038c0649f6f4d5f2b9ad.gif);
+    background-size: 1300px;
+    background-repeat: no-repeat;
+    background-position-x: -330px;
+    background-position-y: -10px;
+}
+
+.aco{
+    background-color: #e0dbcc;
+}
+
+.gelo{
+    background-color: #87ced3;
+}
+
+.fantasma{
+    background-color: #9a37a3;
+}
+
+.cartao-fantasma{
+    background-image: url(https://cdna.artstation.com/p/assets/images/images/023/470/706/large/francisco-heatley-dusk.jpg?1579296999);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: -250px;
+}
+
+.dragao{
+    background-color: #ebc573;
+}
+
+.cartao-dragao{
+    background-image: url(https://i.pinimg.com/originals/dc/b4/f2/dcb4f24bc9a8c27189c8b49a31e3facf.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: center;
+}
+
+.descricao{
+    max-height: 80px;
+    overflow-y: scroll;
+    font-size: 14px;
+    padding-right: 10px;
+    padding-left: 5px;
+    border-radius: 10px;
+    text-align: center;
+    
+}
